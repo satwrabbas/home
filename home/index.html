@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyEstate - عقارات مصياف</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  </style>
+</head>
+<body class="font-sans text-gray-800">
+  <!-- Header / Navigation -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <img src="/home/images/logo.png" alt="MyEstate Logo" class="h-10 w-auto" />
+        <h1 class="text-2xl font-bold text-indigo-700 hidden md:block">MyEstate</h1>
+      </div>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="#home" class="text-gray-600 hover:text-indigo-600 transition">الرئيسية</a>
+        <a href="#properties" class="text-gray-600 hover:text-indigo-600 transition">العقارات</a>
+        <a href="#about" class="text-gray-600 hover:text-indigo-600 transition">من نحن</a>
+        <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition">اتصل بنا</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative h-screen bg-cover bg-center" style="background-image: url(https://placehold.co/1920x1080/4f46e5/ffffff?text=Real+Estate+Background);">
+    <div class="absolute inset-0 bg-black opacity-40"></div>
+    <div class="container mx-auto px-6 relative z-10 flex flex-col items-center justify-center h-full text-white text-center">
+      <h2 class="text-4xl md:text-5xl font-extrabold mb-4">عقارات مميزة في مصياف وضواحيها</h2>
+      <p class="text-xl max-w-xl mx-auto opacity-90">
+        اكتشف مجموعة مختارة من أفضل العقارات المعروضة للبيع أو الإيجار في المناطق السياحية والسكنية.
+      </p>
+    </div>
+  </section>
+
+  <!-- Properties Section -->
+  <section id="properties" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-12 text-gray-800">العقارات المتاحة</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Property Card 1 - مصياف القديمة -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition hover:scale-105">
+          <img src="https://placehold.co/600x400/4f46e5/ffffff?text=Masyaf+Old+City" alt="مصياف القديمة" class="w-full h-48 object-cover" />
+          <div class="p-6">
+            <h4 class="text-xl font-semibold mb-2">فيلا سكنية - مصياف القديمة</h4>
+            <p class="text-gray-600 mb-4">فيلا تقليدية مع إطلالة على الأماكن الأثرية، مساحة 300 م².</p>
+            <div class="flex justify-between text-sm text-gray-500">
+              <span>السعر: $450,000</span>
+              <span>مساحة: 300 م²</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Property Card 2 - جسر الشغور -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition hover:scale-105">
+          <img src="https://placehold.co/600x400/ec4899/ffffff?text=Jisr+Al-Shughur" alt="جسر الشغور" class="w-full h-48 object-cover" />
+          <div class="p-6">
+            <h4 class="text-xl font-semibold mb-2">شقة سكنية - جسر الشغور</h4>
+            <p class="text-gray-600 mb-4">شقة مفروشة بالكامل مع إطلالة على النهر، مساحة 120 م².</p>
+            <div class="flex justify-between text-sm text-gray-500">
+              <span>السعر: $180,000</span>
+              <span>مساحة: 120 م²</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Property Card 3 - القصير -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition hover:scale-105">
+          <img src="https://placehold.co/600x400/fbbf77/ffffff?text=Al-Qusayr" alt="القصير" class="w-full h-48 object-cover" />
+          <div class="p-6">
+            <h4 class="text-xl font-semibold mb-2">مزرعة زراعية - القصير</h4>
+            <p class="text-gray-600 mb-4">مزرعة زراعية مجهزة بمرافق كاملة على مساحة 5000 م².</p>
+            <div class="flex justify-between text-sm text-gray-500">
+              <span>السعر: $800,000</span>
+              <span>مساحة: 5000 م²</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Property Card 4 - الريحانية -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition hover:scale-105">
+          <img src="https://placehold.co/600x400/4f46e5/ffffff?text=Rihaniya" alt="الريحانية" class="w-full h-48 object-cover" />
+          <div class="p-6">
+            <h4 class="text-xl font-semibold mb-2">فلل سكنية - الريحانية</h4>
+            <p class="text-gray-600 mb-4">فلل فاخرة مع حدائق خاصة وإطلالة على الجبال.</p>
+            <div class="flex justify-between text-sm text-gray-500">
+              <span>السعر: $600,000</span>
+              <span>مساحة: 400 م²</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- See More Card -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition hover:scale-105 cursor-pointer">
+          <div class="relative">
+            <img src="https://placehold.co/600x400/000000/000000?text=+" alt="رؤية المزيد" class="w-full h-48 object-cover opacity-20" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <button class="bg-indigo-600 text-white px-6 py-3 rounded-full hover:bg-indigo-700 transition">
+                رؤية المزيد
+              </button>
+            </div>
+          </div>
+          <div class="p-6 text-center">
+            <h4 class="text-xl font-semibold mb-2">اكتشف المزيد من العقارات</h4>
+            <p class="text-gray-600 mb-4">استعرض مجموعتنا الكاملة من العقارات المميزة</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="max-w-3xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center justify-between mb-8">
+          <img src="https://placehold.co/300x200/4f46e5/ffffff?text=Our+Team" alt="فريق العمل" class="rounded-lg shadow-md mb-6 md:mb-0" />
+          <div>
+            <h3 class="text-3xl font-bold mb-4 text-gray-800">من نحن</h3>
+            <p class="text-lg text-gray-700 leading-relaxed">
+              نحن شركة متخصصة في تقديم خدمات العقارات في منطقة مصياف وضواحيها، حيث نقدم مجموعة متنوعة من العقارات السكنية والتجارية بأسعار تنافسية.
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed mt-4">
+              لدينا خبرة تمتد لسنوات في مجال العقارات، ونسعى دائمًا لتوفير حلول مثالية لعملائنا.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <div class="max-w-3xl mx-auto text-center">
+        <h3 class="text-3xl font-bold mb-6 text-gray-800">تواصل معنا</h3>
+        <p class="text-gray-600 mb-10">
+          هل لديك أي أسئلة أو تحتاج إلى مزيد من المعلومات حول العقارات؟ لا تتردد في التواصل معنا!
+        </p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Email Contact -->
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <h4 class="text-xl font-semibold mb-2">البريد الإلكتروني</h4>
+            <p class="text-gray-600 mb-4">للاستفسارات العامة</p>
+            <a href="mailto:info@myestate.com" class="text-indigo-600 hover:text-indigo-800 transition font-medium">
+              info@myestate.com
+            </a>
+          </div>
+          
+          <!-- WhatsApp Contact -->
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+              </svg>
+            </div>
+            <h4 class="text-xl font-semibold mb-2">الواتساب</h4>
+            <p class="text-gray-600 mb-4">للاستفسارات الفورية</p>
+            <a href="https://wa.me/123456789" target="_blank" rel="noopener noreferrer" class="text-green-600 hover:text-green-800 transition font-medium">
+              +1 (234) 567-890
+            </a>
+          </div>
+        </div>
+        
+        <div class="mt-12 bg-white p-6 rounded-lg shadow-md">
+          <h4 class="text-xl font-semibold mb-4">ساعات العمل</h4>
+          <div class="flex flex-col md:flex-row justify-between text-gray-600">
+            <div class="mb-4 md:mb-0">
+              <p class="font-medium">الأحد - الخميس:</p>
+              <p>9:00 ص - 6:00 م</p>
+            </div>
+            <div>
+              <p class="font-medium">الجمعة - السبت:</p>
+              <p>مغلق</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t">
+    <div class="container mx-auto px-6 py-6">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="flex items-center space-x-2 mb-4 md:mb-0">
+          <img src="https://i.imgur.com/your-logo-url.png" alt="MyEstate Logo" class="h-8 w-auto" />
+          <h1 class="text-xl font-bold text-indigo-700">MyEstate</h1>
+        </div>
+        <div class="text-gray-600">
+          &copy; <span id="currentYear"></span> MyEstate - جميع الحقوق محفوظة.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Set current year
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+```
